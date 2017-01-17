@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>회원가입</h1>
+      <fieldset>
+        <legend>필수입력항목</legend>
+    <table border="5" width="100%" summary="회원가입">
+      <colgroup>
+        <col width="200"/>
+        <col width="800"/>
+      </colgroup>
+         <tr>
+           <td><label for="이름">이름</td>
+           <td><input type="text" name="username" id="이름" placeholder="이름" value="군소"></td>
+         </tr>
+         <tr>
+           <td>성별</td>
+           <td>
+             <input type="radio" name="성별" value="남" checked>남
+             <input type="radio" name="성별" value="여">여
+           </td>
+         </tr>
+         <tr>
+           <td><label for="아이디">아이디</td>
+           <td><input type="text" name="userid" id="아이디" placeholder="아이디" value="msth">
+               <input type="button" value="중복확인"></td>
+         </tr>
+         <tr>
+           <td><lavel for="비밀번호">비밀번호</td>
+           <td><input type="password" name="userpassword" id="비밀번호" placeholer="비밀번호" value="****"></td>
+         </tr>
+         <tr>
+           <td><label for="비밀번호 재입력">비밀번호 재입력</td>
+           <td><input type="password" name="userpassword" id="비밀번호 재입력" placeholder="비밀번호" value="****"></td>
+         </tr>
+         <tr>
+           <td><label for="주소">주소</td>
+           <td><input type="text" name="주소" id="주소" placeholder="주소" value="바다">
+               <input type="button" value="주소찾기"></td>
+         </tr>
+         <tr>
+           <td><label for="이메일">이메일</td>
+           <td><input type="text" name="useremailid" id="이메일" placeholer="이메일아이디" value="msth">@
+               <input type="text" name="useremail@" placeholder="123@naver.com" value="naver.com">
+               <select>
+                 <option>naver.com</option>
+                 <option>gmail.com</option>
+               </select>
+               </td>
+         </tr>
+         <tr>
+           <td><label for="전화번호">전화번호</td>
+           <td><select>
+                 <option>010</option>
+                 <option>031</option>
+                 <option>02</option>
+               </select>-
+                <input type="text" name="전화번호 앞" id="전화번호" placeholer="앞자리" value="0000">
+                -<input type="text" name="전화번호 뒤" placeholder="뒷자리" value="0000">
+             </td>
+         </tr>
+         <tr>
+           <td>취미</td>
+           <td>
+             <input type="checkbox">여행
+             <input type="checkbox">쇼핑
+             <Input type="checkbox">게임
+             <Input type="checkbox">기타
+         </td>
+
+         </tr>
+         <tr>
+           <td><label for="자기소개">자기소개</td>
+           <td><input type="textarea" name="자기소개" id="자기소개" placeholder="자기를 소개하는 글" value="우리군쇠"></td>
+         </tr>
+    </fiedset>
+  </table>
+    <input type="submit" value="완료">
+    <input type="reset" value="다시입력">
+  </body>
+</html>
